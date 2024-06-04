@@ -1,0 +1,76 @@
+body
+{
+    background:linear-gradient(90deg,#1DB954 0%,#191414 100%);
+    font-family: sans-serif;
+}
+.src
+{
+    float: right;
+}
+#artist-name
+{
+    border: none;
+    background-color: #191414;
+    color: white;
+}
+.input-group
+{
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #1DB954 !important;
+}
+#Error
+{
+    text-align: center;
+    color:white;
+    font-size: large;
+}
+.container
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.artist-details
+{
+    min-width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #202020;
+    background-color: #202020;
+    visibility: hidden;
+}
+
+#name 
+{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+    padding-left:30px ;
+}
+
+#artist-image 
+{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+#artist-followers, #artist-genres,#artist-popularity 
+{
+    text-align: center;
+    margin-top: 2px;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+
+
+

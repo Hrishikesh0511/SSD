@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-api</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="input-group">
+        <div class="form-outline">
+          <input type="search" id="artist-name" class="form-control" placeholder="search for an artist" />
+        </div>
+        <button type="button" class="btn btn-primary" onclick="getArtist()">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+      <div class="container">
+      <div  class="artist-details">
+        <div id="Error"></div>
+        <img src="spotify.png" alt="" id="artist-image">
+        <div id="name"></div>
+        <div id="artist-followers"></div>
+        <div id="artist-genres"></div>
+        <div id="artist-popularity"></div>
+      </div>
+      
+</body>
+<script src="app.js"></script>
+</html>

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
+:root{
+    --blue:rgb(39, 39, 75);
+    --white:#f3f8fc;
+}
+body{
+    font-family: poppins, sans-serif; 
+    background-color: var(--white);
+    color:var(--blue);
+    margin: 0px;
+}
+.nav-bar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    column-gap: 20px;
+    padding: 2px;
+    padding-bottom: 15px;
+    position:sticky;
+    top: 0%;
+    background-color:#3b3838;
+    z-index: 10;
+}
+.nav-bar span{
+    color: var(--white);
+    padding-top: 4px;
+    padding-right:4px;
+}
+.nav-bar span:hover{
+    cursor: pointer;
+}
+.nav-bar .nav-ele{
+    position: relative;
+    color:var(--white);
+    margin: 0px;
+    font-weight: bolder;
+    -webkit-text-stroke-width: 1px;
+    text-decoration: none;
+    font-family: poppins, sans-serif; 
+    font-size: 16px;
+    padding-top: 3px;
+}
+.nav-bar .nav-ele::before{
+    content:'';
+    position: absolute;
+    width:0%;
+    height: 2px;
+    bottom:-3px;
+    left: 0;
+    background-color: beige;
+    transition: width 0.3s ease;
+}
+.nav-bar .nav-ele:hover{
+    color: beige;
+}
+.nav-bar .nav-ele:hover::before{
+    width: 100%;
+}
+.professor-info {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.professor-image {
+    margin-right: 20px; 
+    margin-left: 40px;
+    margin-top: 20px;
+    max-width:300px;
+    max-height: 300px;
+}
+span .link{
+    color: var(--blue);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.professor-image img {
+    max-width: 100%; 
+    height: 100%;
+    border: 1px solid black;
+}
+
+.professor-details {
+    flex: 1; 
+}
+.name
+{
+    font-size: 60px;
+    font-weight: bold;
+}
+.subpart
+{
+    font-size: 22px;
+    font-weight: bold;
+}
+.about
+{
+    margin:30px;
+    text-indent: 50px;
+    text-align: justify;
+    position: relative;
+    padding: 20px;
+    font-size: small;
+}
+.about::before
+{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0;
+    background-color: #040404;
+    border-top-left-radius: 1px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+span{
+    font-style: italic;
+}
+.heading 
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+.pagination
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+#Recent {
+    font-size: 16px;
+}
+.imp
+{
+    color: red;
+}
+li span{
+    font-weight: bold;
+}
+.list-group-item
+{
+    background-color:rgb(242, 242, 237);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.content
+{
+    padding: 20px;
+}
+.copyright
+{
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+}
+
